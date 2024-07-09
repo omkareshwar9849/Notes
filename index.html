@@ -1,19 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .note-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .note-button:hover {
+            background-color: white;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+        }
+
+        .note-text {
+            margin-left: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .note-button, .note-text {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            li {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .note-text {
+                margin-left: 0;
+                margin-top: 8px;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <h1>Important Notes</h1>
-    <ul>
-        <li><a href="HTML Notes.pdf" target="_blank">HTML</a></li>
-        <li><a href="CSS Notes.pdf" target="_blank">CSS</a></li>
-        <li><a href="git-cheat-sheet-education.pdf" target="_blank">GIT</a></li>
-        <li><a href="SQL (notes) (1).pdf" target="_blank">SQL 1</a></li>
-        <li><a href="SQL Notes by Apna College (1).pdf" target="_blank">SQL 2</a></li>
-        <li><a href="operating system notes.pdf" target="_blank">OS</a></li>
-    </ul>
+    <div class="card">
+        <ul>
+            <li>
+                <button class="note-button" onclick="window.open('HTML Notes.pdf')">Open</button>
+                <span class="note-text">HTML (HyperText Markup Language)</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('CSS Notes.pdf')">Open</button>
+                <span class="note-text">CSS (Cascading Style Sheets)</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('git-cheat-sheet-education.pdf')">Open</button>
+                <span class="note-text">GIT (Global Information Tracker)</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('SQL (notes) (1).pdf')">Open</button>
+                <span class="note-text">SQL 1 (Structured Query Language)</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('SQL Notes by Apna College (1).pdf')">Open</button>
+                <span class="note-text">SQL 2 (Structured Query Language)</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('operating system notes.pdf')">Open</button>
+                <span class="note-text">Operating System</span>
+            </li>
+        </ul>
+    </div>
+
+    <h1>JavaScript Notes</h1>
+    <div class="card">
+        <ul>
+            <li>
+                <button class="note-button" onclick="window.open('./JavaScript/JS1 ClassNotes.pdf')">Open</button>
+                <span class="note-text">JavaScript 1</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('./JavaScript/JS2 ClassNotes.pdf')">Open</button>
+                <span class="note-text">JavaScript 2</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('./JavaScript/JS3 ClassNotes.pdf')">Open</button>
+                <span class="note-text">JavaScript 3</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('./JavaScript/JS4 ClassNotes.pdf')">Open</button>
+                <span class="note-text">JavaScript 4</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('./JavaScript/JS5 ClassNotes (1).pdf')">Open</button>
+                <span class="note-text">JavaScript 5</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('./JavaScript/JS6 ClassNotes.pdf')">Open</button>
+                <span class="note-text">JavaScript 6</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('./JavaScript/JS7 ClassNotes.pdf')">Open</button>
+                <span class="note-text">JavaScript 7</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('./JavaScript/JS11 Class Notes.pdf')">Open</button>
+                <span class="note-text">JavaScript 11</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('./JavaScript/JS12 ClassNotes.pdf')">Open</button>
+                <span class="note-text">JavaScript 12</span>
+            </li>
+        </ul>
+    </div>
+
+    <h1>Python Notes</h1>
+    <div class="card">
+        <ul>
+            <li>
+                <button class="note-button" onclick="window.open('./python notes/Lecture1_py.pdf')">Open</button>
+                <span class="note-text">Python 1</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('./python notes/Lecture2_py.pdf')">Open</button>
+                <span class="note-text">Python 2</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('./python notes/Lecture3_py.pdf')">Open</button>
+                <span class="note-text">Python 3</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('./python notes/Lecture4_py.pdf')">Open</button>
+                <span class="note-text">Python 4</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('./python notes/Lecture5_py.pdf')">Open</button>
+                <span class="note-text">Python 5</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('./python notes/Lecture6_py.pdf')">Open</button>
+                <span class="note-text">Python 6</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('./python notes/Lecture7_py.pdf')">Open</button>
+                <span class="note-text">Python 7</span>
+            </li>
+            <li>
+                <button class="note-button" onclick="window.open('./python notes/Lecture8_py.pdf')">Open</button>
+                <span class="note-text">Python 8</span>
+            </li>
+        </ul>
+    </div>
 </body>
+
+
 </html>
